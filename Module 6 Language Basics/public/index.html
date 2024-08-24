@@ -1,0 +1,26 @@
+<!-- var x; declaring
+x = 10; assignment
+var y=10; initialization -->
+
+<!-- <script>
+    x = 10;
+    document.write("x = "+x);
+</script> -->
+
+<!-- <script>
+    "use strict";
+    x = 20;  //Uncaught ReferenceError: x is not defined
+    document.write("x = "+x);
+</script> -->
+<script>
+  "use strict";
+  function f1() {
+    var x; // declaring
+    x = 10; // assignment
+    if (x == 10) {
+      var y = 20; // initialization
+    }
+    document.write("x=" + x + "<br>" + "y=" + y);
+  }
+  f1();
+</script>

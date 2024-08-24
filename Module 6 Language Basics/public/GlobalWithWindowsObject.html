@@ -1,0 +1,35 @@
+<script>
+  "use strict";
+  var x = 10;
+  let y = 20;
+  const z = 30;
+  function f1() {
+    window.a = 100;
+    document.write(
+      "function 1 <br> x=" +
+        x +
+        "<br>y=" +
+        y +
+        "<br>z=" +
+        z +
+        "<br> a=" +
+        a +
+        "<br>"
+    );
+  }
+  function f2() {
+    document.write(
+      "function 2 <br> x=" +
+        x +
+        "<br>y=" +
+        y +
+        "<br>z=" +
+        z +
+        "<br> a=" +
+        a +
+        "<br>"
+    );
+  }
+  f1();
+  f2();
+</script>
