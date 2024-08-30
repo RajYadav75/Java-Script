@@ -1,0 +1,30 @@
+<script>
+  var link1 = "<a href = 'home.html'>Home</a>";
+  var link2 = '<a href="index.html">Home</a>';
+  document.write(link1);
+  document.write(link2);
+
+  var username = prompt("Enter Name ");
+  var age = parseInt(prompt("Enter Age "));
+  var msg =
+    "Hello !" + " " + username + " " + "you will be " + (age + 1) + "<br>";
+  document.write(msg);
+
+  var msg1 = `Hello ! ${username} you will be ${age + 1} <br>`;
+  document.write(msg1);
+
+  var title = prompt("Enter Title");
+  var logineName = prompt("Enter Login Name ", "UserName, Email, Date");
+  var loginType = prompt("Enter Login Type ", "Text|EMAIL|Date");
+  var login = `
+    <form>
+        <h2>${title}</h2>
+        <dl>
+            <dt>${logineName}</dt>
+            <dd><input type=${loginType}></dd>
+        </dl>
+        <button>Login</button>    
+    </form>
+  `;
+  document.write(login);
+</script>
