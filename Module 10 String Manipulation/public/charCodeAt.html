@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function VerifyUser() {
+        var UserName = document.getElementById("UserName").value;
+        var UserError = document.getElementById("UserError");
+        if (UserName.charCodeAt(0) >= 65 && UserName.charCodeAt(0) <= 90) {
+          UserError.innerHTML = "";
+        } else {
+          UserError.innerHTML =
+            "Name must start with uppercaseletter".fontcolor("red");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    User Name: <input type="text" onblur="VerifyUser()" id="UserName" />
+    <span id="UserError"></span>
+  </body>
+</html>
