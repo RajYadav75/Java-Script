@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <script>
+    function SubmitClick(){
+        var test = document.getElementById("test").value;
+        if(test.match(/\+\(1\)\(\d{3}\)\s\d{3}-\d{4}/)) {
+             document.write(`Your entered : ${test}`);
+            } else {
+                alert("Invalid - +(1)(425) 555-0100");
+            }       
+    }
+ </script>
+ </head>
+ <body>
+ Your string : <input type="text" id="test"> <button 
+onclick="SubmitClick()">Submit</button>
+ </body>
+ </html>

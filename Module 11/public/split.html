@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script>
+    var products = "Samsung TV-46000.44, Nike Casuals-5000.44";
+    var [tv, shoe] = products.split(',');
+    var [name, price] = shoe.split('-');
+    document.write(`<h2>Shoe Details</h2>
+        Name : ${shoe.substring(shoe.indexOf("-"),0)} <br>
+        Price: ${shoe.substring(shoe.indexOf("-")+1)} <br>
+        <hr>
+        Shoe Name: ${name} <br>
+        Shoe Price: ${price}
+    `);
+ </script>
+</head>
+<body>
+   
+</body>
+</html>

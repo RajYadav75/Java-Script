@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script>
+function SubmitClick(){
+    var test = document.getElementById("test").value;
+    if(test.match(/(?=.*[A-Z])\w{4,10}/)) {
+         document.write(`Your entered : ${test}`);
+    } else {
+         alert("Invalid - Name 4 to 10 chars with atleast one uppercase letter");
+    }
+}
+</script>
+</head>
+<body>
+    Your string : <input type="text" id="test"> 
+    <button onclick="SubmitClick()">Submit</button>
+</body>
+</html>
