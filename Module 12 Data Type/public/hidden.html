@@ -1,0 +1,12 @@
+<script>
+  var UserId = Symbol();
+  var userDetails = {
+        [UserId] : "john_nit",
+        UserName : "John",
+        Age: 22
+    }
+    for(var property in userDetails){
+        document.write(`${property} : ${userDetails[property]} <br>`);
+    }
+    document.write("User Id : " + userDetails[UserId] + "<br>");
+</script>

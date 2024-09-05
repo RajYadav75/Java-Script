@@ -1,0 +1,29 @@
+<script>
+  var name = "Samsung TV";
+
+  var price;
+  if (price == undefined) {
+    document.write(`Name = ${name} <br> Price = ${price}`);
+  } else {
+    document.write(`Name = ${name} <br> Price = ${price} `);
+  }
+  var price = 100.0;
+  //this is
+  if (price) {
+    document.write(`<br>Name = ${name} <br> Price = ${price}`);
+  } else {
+    document.write(`Name = ${name} <br> Price = ${price}`);
+  }
+
+  document.write(
+    `<br><h3>Undefined verifies the type </h3><br> <h3>Not-defined verifies the reference.</h3>`
+  );
+
+  // Here is Not Defined
+  var name = "Samsung TV";
+  if (price) {
+    document.write(`Name=${name}<br>Price=${price}`);
+  } else {
+    document.write(`Name=${name}`);
+  }
+</script>
