@@ -1,0 +1,7 @@
+<script>
+  var categories = ["Electronics", "Footwear", "Fashion"];
+  document.write(`${categories.splice(1, 2)} removed.<br>`);
+  for (var property in categories) {
+    document.write(`[${property}] ${categories[property]}<br>`);
+  }
+</script>
