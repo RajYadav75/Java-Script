@@ -1,0 +1,28 @@
+<!-- <script>
+    let tv = {
+      Key : value,
+      Key : value
+  }
+    JSON{
+      "Name": "Samsung TV",
+      "Price" : 30000.44,
+      "Stock" : true
+    }
+</script> -->
+<!-- <XML>
+    <Product>
+        <Name> Samsung TV </Name>
+        <Price> 30000.44 </Price>
+        <Stock> true </Stock>
+    </Product>
+</XML> -->
+<script>
+  var tv = {
+        "Name": "Samsung TV",
+        "Price": 50000.33,
+        "Stock": true,
+        "Cities": ["Delhi", "Hyd"],
+        "Rating": {"Rate":4.3, "Count": 3500}
+    }
+    document.write(` Name  : ${tv.Name} <br>Price : ${tv.Price} <br>Stock : ${tv.Stock} <br>Cities: ${tv.Cities.toString()} <br>Rating : ${tv.Rating.Rate} [${tv.Rating.Count}]`);
+</script>
